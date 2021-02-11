@@ -1,0 +1,9 @@
+.listStyle{
+    text-decoration: none;
+}
+.grid{
+    display:grid;
+    grid-template-columns: 80% auto;
+    justify-content: center;
+    align-items: center;
+}
