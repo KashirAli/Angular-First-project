@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
  
-  
+  feature:string = 'recipe';
+  onCheck(featurename:string){
+      this.feature = featurename;
+  }
 }
