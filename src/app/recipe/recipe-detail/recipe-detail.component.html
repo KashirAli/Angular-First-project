@@ -24,11 +24,11 @@
     </div>
    <div class="row">
        <div class="col-md-12 col-xs-12">
-           <p>description</p>
+           <p>{{recipe.description}}</p>
        </div>
    </div>
    <div class="row">
-       <div class="col-md-12 col-xs-12">
-           <p>Ingredients</p>
+       <div class="col-md-12 col-xs-12" *ngFor="let ingredient of recipe.ingredient">
+           <p>{{ingredient.name}} - {{ingredient.amount}}</p>
        </div>
    </div>

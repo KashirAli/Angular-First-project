@@ -2,6 +2,7 @@ import { Component,
    Input,
    OnInit,
    } from '@angular/core';
+import { Ingredient } from 'src/shared/ingredient.model';
 import { RecipeService } from '../../recipe.service';
 
 
@@ -12,7 +13,7 @@ import { RecipeService } from '../../recipe.service';
 })
 export class RecipeItemComponent implements OnInit {
    
-@Input() public recipe:{name:string,description:string,imagePath:string};
+@Input() public recipe:{name:string,description:string,imagePath:string,ingredient:Ingredient[]};
  
   constructor(private _recipeService:RecipeService) { }
 
