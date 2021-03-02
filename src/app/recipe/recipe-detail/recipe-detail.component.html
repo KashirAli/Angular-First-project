@@ -11,15 +11,20 @@
     <div class="row">
         <div class="col-md-12 col-xs-12">
             <div class="btn-group">
-                <button class="btn btn-success dropdown-toggle">
+                <button class="btn btn-success dropdown-toggle"id="dropdownMenuButton"data-toggle="dropdown"aria-haspopup="true" aria-expanded="false">
                     Manage <span class="caret"></span>
                 </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#">To Shopping List</a></li>
-                    <li><a href="#">Edit </a></li>
-                    <li><a href="#">Delete</a></li>
+                <a class="dropdown-item" (click)="toShopping()">To Shopping List</a>
+                <ul class="dropdown-menu"aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" (click)="toShopping()">To Shopping List</a></li>
+                    <li><a class="dropdown-item" href="#">Edit </a></li>
+                    <li><a class="dropdown-item" href="#">Delete</a></li>
                 </ul>
             </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown button
+                </button>
         </div>
     </div>
    <div class="row">
